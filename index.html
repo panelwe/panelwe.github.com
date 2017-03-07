@@ -1,0 +1,64 @@
+		  					var b = document.createTextNode("Behance");
+		  					_this.addClass("sns3");
+		  				break;
+
+		  				case 4:
+		  					var b = document.createTextNode("LinkedIn");
+		  					_this.addClass("sns4");
+		  				break;
+
+		  				case 5:
+		  					var b = document.createTextNode("Quora");
+		  					_this.addClass("sns5");
+		  				break;
+
+		  				case 6:
+		  					var b = document.createTextNode("Github");
+		  					_this.addClass("sns6");
+		  				break;
+
+		  				case 7:
+		  					var b = document.createTextNode("知乎");
+		  					_this.addClass("sns7");
+		  					break;
+		  				case 8:
+		  					var b = document.createTextNode("LOFTER");
+		  					_this.addClass("sns8");
+		  					break;
+
+		  				case 9:
+		  					var b = document.createTextNode("站酷");
+		  					_this.addClass("sns9");
+		  					break;
+
+		  				case 10:
+		  					var b = document.createTextNode("新浪微博");
+		  					_this.addClass("sns10");
+		  					break;
+
+		  				case 11:
+		  					var b = document.createTextNode("SegmentFault");
+		  					_this.addClass("sns11");
+		  					break;
+
+		  				case 12:
+		  					var b = document.createTextNode("StackoverFlow");
+		  					_this.addClass("sns12");
+		  					break;
+					}
+					_span.prepend($(b)).css("marginLeft",-(_span.width()+20)/2+"px");
+				});
+			}
+			//列表 hover社交地址，自定义tips
+			$(".mr_sns a").hover(function(){
+				$(this).find("span").show();
+			},function(){
+				$(this).find("span").hide();
+			});
+			$(document).click(function(){
+				$('.mr_down_tip').hide();
+			});
+		})
+	</script>
+</body>
+</html>
